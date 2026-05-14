@@ -1,0 +1,65 @@
+.inventory-manager {
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.data-grid-container {
+  height: 600px;
+  width: 100%;
+}
+
+.product-cell {
+  display: flex;
+  align-items: center;
+}
+
+.quantity-cell {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.stock-progress {
+  height: 6px;
+  border-radius: 3px;
+}
+
+.stock-progress.normal {
+  background-color: #4caf50;
+}
+
+.stock-progress.low {
+  background-color: #ff9800;
+}
+
+.stock-progress.out {
+  background-color: #f44336;
+}
+
+.quantity-value {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}

@@ -1,0 +1,36 @@
+.settings-panel {
+  padding: 20px;
+}
+
+.MuiTab-root {
+  min-width: 120px !important;
+}
+
+.tab-content {
+  padding: 20px;
+}
+
+.setting-section {
+  margin-bottom: 30px;
+}
+
+.setting-section h3 {
+  margin-bottom: 15px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #eee;
+}
+
+.setting-item {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .MuiTabs-flexContainer {
+    flex-wrap: wrap;
+  }
+  
+  .MuiTab-root {
+    min-width: 80px !important;
+    padding: 6px 12px;
+  }
+}

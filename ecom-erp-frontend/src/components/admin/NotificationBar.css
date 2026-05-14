@@ -1,0 +1,130 @@
+/* components/admin/NotificationBar.css */
+.notification-bar {
+  position: fixed;
+  top: 60px;
+  right: -350px;
+  width: 350px;
+  height: calc(100vh - 60px);
+  background-color: white;
+  box-shadow: -2px 0 4px rgba(0, 0, 0, 0.1);
+  transition: right 0.3s ease;
+  z-index: 998;
+  overflow-y: auto;
+}
+
+.notification-bar.open {
+  right: 0;
+}
+
+.notification-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.notification-header h3 {
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.badge {
+  background-color: #e74c3c;
+  color: white;
+  border-radius: 10px;
+  padding: 2px 8px;
+  font-size: 0.8rem;
+  margin-left: 8px;
+}
+
+.notification-actions {
+  display: flex;
+  align-items: center;
+}
+
+.notification-actions button {
+  background: none;
+  border: none;
+  color: #3498db;
+  cursor: pointer;
+  font-size: 0.8rem;
+  margin-left: 10px;
+}
+
+.close-btn {
+  font-size: 1.2rem;
+  color: #7f8c8d;
+}
+
+.notification-list {
+  padding: 10px;
+}
+
+.notification-item {
+  display: flex;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  background-color: #f8f9fa;
+  position: relative;
+}
+
+.notification-item.read {
+  background-color: white;
+  opacity: 0.7;
+}
+
+.notification-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #e3f2fd;
+  color: #1976d2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.notification-content {
+  flex-grow: 1;
+}
+
+.notification-message {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #2c3e50;
+}
+
+.notification-time {
+  margin: 5px 0 0;
+  font-size: 0.7rem;
+  color: #7f8c8d;
+}
+
+.mark-read-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: none;
+  border: none;
+  color: #7f8c8d;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.no-notifications {
+  text-align: center;
+  padding: 20px;
+  color: #7f8c8d;
+}
+
+@media (max-width: 576px) {
+  .notification-bar {
+    width: 100%;
+    right: -100%;
+  }
+}

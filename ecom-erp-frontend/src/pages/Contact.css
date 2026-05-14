@@ -1,0 +1,26 @@
+.contact-page {
+  min-height: 100vh;
+  padding-top: 64px; /* Account for fixed header */
+}
+
+.contact-hero {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+  margin-bottom: 4rem;
+}
+
+/* Form styling */
+.contact-page form {
+  margin-top: 2rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .contact-hero {
+    margin-bottom: 2rem;
+  }
+  
+  .contact-hero h2 {
+    font-size: 2.5rem !important;
+  }
+}

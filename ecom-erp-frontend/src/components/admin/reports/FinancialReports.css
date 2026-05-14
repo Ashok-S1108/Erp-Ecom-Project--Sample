@@ -1,0 +1,80 @@
+.financial-reports {
+  padding: 20px;
+}
+
+.report-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.report-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.report-controls {
+  margin-bottom: 20px;
+}
+
+.report-content {
+  margin-top: 20px;
+}
+
+.date-picker {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.summary-card {
+  height: 100%;
+  text-align: center;
+}
+
+.summary-card.revenue {
+  border-left: 4px solid #82ca9d;
+}
+
+.summary-card.expense {
+  border-left: 4px solid #ffc658;
+}
+
+.summary-card.profit {
+  border-left: 4px solid #8884d8;
+}
+
+.summary-card.inflow {
+  border-left: 4px solid #82ca9d;
+}
+
+.summary-card.outflow {
+  border-left: 4px solid #ffc658;
+}
+
+.summary-card.assets {
+  border-left: 4px solid #82ca9d;
+}
+
+.summary-card.liabilities {
+  border-left: 4px solid #ffc658;
+}
+
+.summary-card.equity {
+  border-left: 4px solid #8884d8;
+}
+
+@media (max-width: 768px) {
+  .report-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .report-actions {
+    width: 100%;
+    justify-content: flex-end;
+  }
+}

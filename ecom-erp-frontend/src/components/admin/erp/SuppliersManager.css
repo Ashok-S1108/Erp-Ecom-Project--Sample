@@ -1,0 +1,47 @@
+.suppliers-manager {
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.data-grid-container {
+  height: 600px;
+  width: 100%;
+}
+
+.contact-cell {
+  display: flex;
+  align-items: center;
+}
+
+.MuiDataGrid-root {
+  border: none !important;
+}
+
+.MuiDataGrid-columnHeaders {
+  background-color: #f5f5f5;
+}
+
+.MuiDataGrid-cell {
+  border-bottom: 1px solid rgba(224, 224, 224, 0.5) !important;
+}

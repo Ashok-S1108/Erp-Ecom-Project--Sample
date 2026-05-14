@@ -1,0 +1,89 @@
+.admin-dashboard {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.main-content {
+  flex-grow: 1;
+  margin-left: 250px;
+  transition: margin-left 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-wrapper {
+  flex: 1;
+  padding: 40px;
+  margin-top: 60px;
+  overflow-y: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .main-content {
+    margin-left: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .admin-sidebar {
+    transform: translateX(-100%);
+    position: fixed;
+    z-index: 1100;
+  }
+  
+  .admin-sidebar.mobile-open {
+    transform: translateX(0);
+  }
+  
+  .main-content {
+    margin-left: 0;
+  }
+  
+  .content-wrapper {
+    padding: 15px;
+  }
+}
+
+/* Grid Layout for Dashboard Home */
+.dashboard-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+    "stats stats stats stats"
+    "chart chart chart activity"
+    "orders orders inventory inventory";
+}
+
+.stat-card:nth-child(1) { grid-area: stats; }
+.sales-chart { grid-area: chart; }
+.activity-feed { grid-area: activity; }
+.recent-orders { grid-area: orders; }
+.inventory-status { grid-area: inventory; }
+
+@media (max-width: 1024px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "stats stats"
+      "chart chart"
+      "activity activity"
+      "orders orders"
+      "inventory inventory";
+  }
+}
+
+@media (max-width: 600px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "stats"
+      "chart"
+      "activity"
+      "orders"
+      "inventory";
+  }
+}

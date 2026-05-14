@@ -1,0 +1,35 @@
+.auth-page {
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.auth-container {
+  padding: 40px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.auth-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.auth-form {
+  margin-bottom: 20px;
+}
+
+.auth-actions {
+  margin-top: 20px;
+}
+
+.auth-links {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.auth-footer {
+  text-align: center;
+}

@@ -1,0 +1,63 @@
+.sales-reports {
+  padding: 20px;
+}
+
+.report-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.report-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.report-controls {
+  margin-bottom: 20px;
+}
+
+.report-content {
+  margin-top: 20px;
+}
+
+.date-picker {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.summary-card {
+  height: 100%;
+  text-align: center;
+}
+
+.top-items {
+  margin-top: 20px;
+}
+
+.top-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.top-item:last-child {
+  border-bottom: none;
+}
+
+@media (max-width: 768px) {
+  .report-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .report-actions {
+    width: 100%;
+    justify-content: flex-end;
+  }
+}

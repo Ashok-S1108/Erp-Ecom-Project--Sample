@@ -1,0 +1,32 @@
+/* components/customer/cart/Cart.css */
+.cart-item {
+  transition: all 0.3s ease;
+}
+
+.cart-item:hover {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+/* Animation for cart actions */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.cart-item-updating {
+  animation: pulse 0.5s ease-in-out;
+  opacity: 0.7;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .cart-item .MuiGrid-item {
+    padding-bottom: 16px;
+  }
+  
+  .cart-item .MuiGrid-container {
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+  }
+}

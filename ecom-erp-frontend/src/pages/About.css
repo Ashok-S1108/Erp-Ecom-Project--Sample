@@ -1,0 +1,21 @@
+.about-page {
+  min-height: 100vh;
+  padding-top: 64px; /* Account for fixed header */
+}
+
+.about-hero {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  margin-bottom: 4rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .about-hero {
+    margin-bottom: 2rem;
+  }
+  
+  .about-hero h2 {
+    font-size: 2.5rem !important;
+  }
+}

@@ -1,0 +1,269 @@
+/* Home Page Styles */
+.home-page {
+  padding-bottom: 40px;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(135deg, #3a86ff 0%, #8338ec 100%);
+  color: white;
+  padding: 80px 0;
+  margin-bottom: 60px;
+}
+
+.hero-container {
+  align-items: center;
+}
+
+.hero-content {
+  padding: 0 20px;
+}
+
+.hero-title {
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.hero-subtitle {
+  opacity: 0.9;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.hero-btn.primary {
+  background: white;
+  color: #3a86ff;
+  font-weight: 600;
+  padding: 12px 30px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.hero-btn.primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.hero-btn.secondary {
+  border: 2px solid white;
+  color: white;
+  font-weight: 600;
+  padding: 12px 30px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.hero-btn.secondary:hover {
+  background: white;
+  color: #3a86ff;
+}
+
+.hero-image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Section Titles */
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+  font-weight: 700;
+}
+
+.section-title:after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #3a86ff;
+  margin: 15px auto;
+  border-radius: 2px;
+}
+
+/* Featured Products */
+.featured-products-section {
+  margin: 60px 0;
+}
+
+.products-grid {
+  margin-top: 20px;
+}
+
+/* Categories Section */
+.categories-section {
+  margin: 60px 0;
+}
+
+.categories-grid {
+  margin-top: 20px;
+}
+
+.category-card {
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.category-image-container {
+  position: relative;
+  height: 150px;
+  overflow: hidden;
+}
+
+.category-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.category-card:hover .category-image {
+  transform: scale(1.05);
+}
+
+.category-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(58, 134, 255, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.category-card:hover .category-overlay {
+  opacity: 1;
+}
+
+.category-overlay i {
+  font-size: 40px;
+  color: white;
+}
+
+.category-content {
+  text-align: center;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.category-name {
+  font-weight: 600;
+  color: #212529;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  margin: 60px 0;
+}
+
+.testimonials-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.testimonial-card {
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+}
+
+.testimonial-rating {
+  margin-bottom: 15px;
+}
+
+.testimonial-text {
+  font-style: italic;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+}
+
+.testimonial-avatar {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+
+.author-name {
+  font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 60px 0;
+  }
+  
+  .hero-title {
+    font-size: 2rem;
+  }
+  
+  .hero-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .hero-btn {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 1.8rem;
+  }
+  
+  .testimonials-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 1.8rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+  
+  .categories-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -1,0 +1,42 @@
+📌 Controllers List
+1. User & Authentication
+user.controller.js – handles registration, login, profile, update user, delete user, change password, etc.
+
+auth.controller.js (optional) – if you want a separate file for token refresh & authentication-only logic.
+
+2. Product Management
+product.controller.js – CRUD for products, search/filter, stock updates (integrated with ERP inventory).
+
+category.controller.js – CRUD for product categories/subcategories.
+
+inventory.controller.js – manages stock, adjustments, and low-stock alerts.
+
+3. Orders & Payments
+order.controller.js – create orders, update status, track delivery.
+
+payment.controller.js – handles payment processing (Stripe, PayPal, etc.), refunds.
+
+invoice.controller.js – generate and manage invoices.
+
+4. ERP – Procurement & Suppliers
+supplier.controller.js – CRUD for suppliers.
+
+purchaseOrder.controller.js – create and manage purchase orders for suppliers.
+
+inventoryTransaction.controller.js – logs all stock inflows/outflows.
+
+5. CRM – Customers
+customer.controller.js – manages customer records (could reuse user controller if customers are User role).
+
+review.controller.js – product reviews & ratings.
+
+6. Notifications & Support
+notification.controller.js – send and manage in-app/email notifications.
+
+feedback.controller.js – handle customer feedback or support tickets.
+
+7. Reports & Analytics
+report.controller.js – sales reports, inventory reports, customer activity reports.
+
+8. Admin
+admin.controller.js – dashboard stats, system settings, role management.

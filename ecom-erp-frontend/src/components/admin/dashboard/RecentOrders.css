@@ -1,0 +1,44 @@
+.recent-orders {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.orders-table {
+  overflow-x: auto;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.status-badge.success {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.status-badge.warning {
+  background-color: #fff8e1;
+  color: #ff8f00;
+}
+
+.status-badge.error {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+.status-badge.info {
+  background-color: #e3f2fd;
+  color: #1565c0;
+}
+
+.order-actions {
+  display: flex;
+  gap: 5px;
+}

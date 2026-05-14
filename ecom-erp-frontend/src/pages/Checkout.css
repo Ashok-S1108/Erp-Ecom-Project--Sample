@@ -1,0 +1,30 @@
+.checkout-page {
+  padding: 20px 0;
+}
+
+.checkout-header {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.checkout-form-container {
+  padding: 30px;
+}
+
+.navigation-actions {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.error-message {
+  margin: 20px 0;
+  padding: 15px;
+  background-color: #ffebee;
+  border-radius: 4px;
+}
+
+.empty-cart-message {
+  text-align: center;
+  padding: 60px 20px;
+}

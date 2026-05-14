@@ -1,0 +1,82 @@
+/* pages/ProductDetail.css */
+/* Custom styles for product detail page */
+
+/* Image zoom effect */
+.product-image-zoom {
+  transition: transform 0.3s ease;
+  cursor: zoom-in;
+}
+
+.product-image-zoom:hover {
+  transform: scale(1.02);
+}
+
+/* Tab panel animations */
+.MuiTabPanel-root {
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Specification list styles */
+.specification-item {
+  border-bottom: 1px solid #f0f0f0;
+  padding: 8px 0;
+}
+
+.specification-item:last-child {
+  border-bottom: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .product-detail-grid {
+    flex-direction: column;
+  }
+  
+  .product-image-container {
+    margin-bottom: 24px;
+  }
+  
+  .action-buttons {
+    flex-direction: column;
+  }
+  
+  .action-buttons .MuiButton-root {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+}
+
+/* Review section styles */
+.review-card {
+  margin-bottom: 16px;
+  border-radius: 8px;
+}
+
+.review-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.review-avatar {
+  margin-right: 12px;
+}
+
+/* Loading animation */
+.product-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
